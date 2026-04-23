@@ -1,0 +1,9 @@
+# Palmmicro/Woody 公众号文章链接列表
+# 每行一个URL，以 # 开头的行会被忽略
+
+# 已下载的文章（测试用）
+https://mp.weixin.qq.com/s/SWXj-nHi9AJGbEvohDKOxg
+
+# 更多文章链接（从现有文档中提取）
+# 注意：需要手动添加更多文章链接
+# 格式: https://mp.weixin.qq.com/s/xxxxxxxx

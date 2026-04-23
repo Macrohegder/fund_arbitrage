@@ -1,0 +1,73 @@
+{
+  "description": "IB实时行情配置 - 仅使用IB数据源",
+  "version": "2.0",
+  "note": "本配置仅使用Interactive Brokers数据源，无降级机制",
+  "gateway": {
+    "host": "127.0.0.1",
+    "port": 4002,
+    "client_id": 11,
+    "paper_trading": true
+  },
+  "symbols": {
+    "XOP": {
+      "name": "SPDR S&P Oil & Gas Exploration & Production ETF",
+      "sec_type": "STK",
+      "exchange": "SMART",
+      "currency": "USD",
+      "description": "油气开采指数ETF，与华宝油气(162411)跟踪同一指数"
+    },
+    "SPY": {
+      "name": "SPDR S&P 500 ETF Trust",
+      "sec_type": "STK",
+      "exchange": "SMART",
+      "currency": "USD",
+      "description": "标普500指数ETF"
+    },
+    "QQQ": {
+      "name": "Invesco QQQ Trust",
+      "sec_type": "STK",
+      "exchange": "SMART",
+      "currency": "USD",
+      "description": "纳斯达克100指数ETF"
+    },
+    "XBI": {
+      "name": "SPDR S&P Biotech ETF",
+      "sec_type": "STK",
+      "exchange": "SMART",
+      "currency": "USD",
+      "description": "标普生物科技ETF"
+    },
+    "USO": {
+      "name": "United States Oil Fund",
+      "sec_type": "STK",
+      "exchange": "SMART",
+      "currency": "USD",
+      "description": "原油ETF"
+    },
+    "GLD": {
+      "name": "SPDR Gold Shares",
+      "sec_type": "STK",
+      "exchange": "SMART",
+      "currency": "USD",
+      "description": "黄金ETF"
+    }
+  },
+  "tracking": {
+    "default_fund": "162411",
+    "position_ratio": 0.95,
+    "update_interval": 5,
+    "cache_duration": 60
+  },
+  "arbitrage": {
+    "premium_threshold": 1.5,
+    "discount_threshold": -0.8,
+    "subscription_fee": 0.15,
+    "redemption_fee": 0.5,
+    "trading_fee": 0.03
+  },
+  "data_policy": {
+    "only_ib": true,
+    "no_fallback": true,
+    "trade_on_ib_failure": false
+  }
+}

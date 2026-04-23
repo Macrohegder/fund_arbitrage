@@ -1,0 +1,32 @@
+{
+  "telegram": {
+    "bot_token": "YOUR_BOT_TOKEN",
+    "chat_id": "YOUR_CHAT_ID"
+  },
+  "funds": {
+    "162411": {
+      "name": "华宝油气",
+      "proxy_etf": "XOP",
+      "enabled": true,
+      "thresholds": {
+        "premium_high": 1.5,
+        "premium_low": -0.5,
+        "hedge_min": 0.15
+      }
+    },
+    "161127": {
+      "name": "标普生物科技",
+      "proxy_etf": "XBI",
+      "enabled": true,
+      "thresholds": {
+        "premium_high": 1.5,
+        "premium_low": -0.5,
+        "hedge_min": 0.15
+      }
+    }
+  },
+  "monitor": {
+    "interval_seconds": 300,
+    "alert_cooldown_minutes": 30
+  }
+}

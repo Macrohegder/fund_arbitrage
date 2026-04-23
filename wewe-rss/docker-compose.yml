@@ -1,0 +1,16 @@
+version: '3'
+services:
+  wewe-rss:
+    image: cooderl/wewe-rss-sqlite:latest
+    container_name: wewe-rss
+    ports:
+      - "4000:4000"
+    environment:
+      - DATABASE_TYPE=sqlite
+      - AUTH_CODE=fund_arbitrage_2024  # 授权码，访问管理界面需要
+      - CRON_EXPRESSION=0 9,21 * * *   # 定时更新：每天9点和21点
+      - FEED_MODE=fulltext             # RSS全文模式
+      - SERVER_ORIGIN_URL=http://localhost:4000
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
