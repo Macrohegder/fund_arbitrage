@@ -69,7 +69,7 @@ docker logs wewe-rss -f
 ### 3. 测试自动下载
 
 ```bash
-cd /root/.openclaw/workspace/fund_arbitrage
+cd /root/quant/fund_arbitrage
 
 # 运行自动下载脚本
 python3 auto_download_wechat.py
@@ -82,7 +82,7 @@ python3 auto_download_wechat.py
 crontab -e
 
 # 添加以下内容（每天10:00和22:00执行）
-0 10,22 * * * cd /root/.openclaw/workspace/fund_arbitrage && python3 auto_download_wechat.py >> logs/wechat_download.log 2>&1
+0 10,22 * * * cd /root/quant/fund_arbitrage && python3 auto_download_wechat.py >> logs/wechat_download.log 2>&1
 ```
 
 ## 文件说明
@@ -124,7 +124,7 @@ docker start wewe-rss
 
 # 或者重新创建容器
 docker rm -f wewe-rss
-cd /root/.openclaw/workspace/fund_arbitrage/wewe-rss
+cd /root/quant/fund_arbitrage/wewe-rss
 docker run -d --name wewe-rss -p 4000:4000 \
   -e DATABASE_TYPE=sqlite \
   -e AUTH_CODE=fund_arbitrage_2024 \

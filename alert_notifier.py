@@ -35,7 +35,7 @@ from pathlib import Path
 from typing import Optional, Dict, List
 
 # 配置
-CONFIG_FILE = Path("/root/.openclaw/workspace/.telegram_bot_config")
+CONFIG_FILE = Path("/root/quant/.telegram_bot_config")
 
 # ============ 配置加载 ============
 

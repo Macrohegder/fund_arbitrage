@@ -8,15 +8,15 @@
 # 添加到crontab:
 #   crontab -e
 #   # A股交易时段内每5分钟检查一次
-#   */5 9-15 * * 1-5 /root/.openclaw/workspace/fund_arbitrage/run_alert.sh
+#   */5 9-15 * * 1-5 /root/quant/fund_arbitrage/run_alert.sh
 #   
 #   # 美股盘后收盘后发送A股开盘预估（北京时间08:30，夏令时）
-#   30 8 * * 2-6 /root/.openclaw/workspace/fund_arbitrage/run_alert.sh --forecast
+#   30 8 * * 2-6 /root/quant/fund_arbitrage/run_alert.sh --forecast
 #
 
 # 设置环境
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
-export PYTHONPATH="/root/.openclaw/workspace/fund_arbitrage:$PYTHONPATH"
+export PYTHONPATH="/root/quant/fund_arbitrage:$PYTHONPATH"
 
 # 脚本目录
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

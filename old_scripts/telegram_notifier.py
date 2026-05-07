@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Optional, Dict, List, Tuple
 
 # 配置 - 优先从workspace目录读取配置文件
-CONFIG_FILE = Path("/root/.openclaw/workspace/.telegram_bot_config")
+CONFIG_FILE = Path("/root/quant/.telegram_bot_config")
 
 def load_telegram_config():
     """加载Telegram配置"""

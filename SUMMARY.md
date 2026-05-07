@@ -38,7 +38,7 @@
 ### 最简单用法
 
 ```bash
-cd /root/.openclaw/workspace/fund_arbitrage
+cd /root/quant/fund_arbitrage
 
 # 自动估值
 python3 run_estimator.py
@@ -116,7 +116,7 @@ python3 analyze_premium.py
 ```bash
 # 设置定时任务
 crontab -e
-*/5 9-15 * * 1-5 cd /root/.openclaw/workspace/fund_arbitrage && python3 run_estimator.py >> logs/est.log 2>&1
+*/5 9-15 * * 1-5 cd /root/quant/fund_arbitrage && python3 run_estimator.py >> logs/est.log 2>&1
 ```
 
 ---

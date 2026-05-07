@@ -13,7 +13,7 @@
     python3 auto_download_wechat.py
     
     # 设置为定时任务 (crontab -e)
-    0 10,22 * * * cd /root/.openclaw/workspace/fund_arbitrage && python3 auto_download_wechat.py >> logs/wechat_download.log 2>&1
+    0 10,22 * * * cd /root/quant/fund_arbitrage && python3 auto_download_wechat.py >> logs/wechat_download.log 2>&1
 """
 
 import asyncio

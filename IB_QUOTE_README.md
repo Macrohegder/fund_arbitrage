@@ -51,7 +51,7 @@
 
 ```bash
 # 参考 ib-data 项目启动Gateway
-/root/.openclaw/workspace/ib-data/scripts/start_vnc.sh
+/root/quant/ib-data/scripts/start_vnc.sh
 
 # 在VNC中登录IB Gateway
 ```
@@ -59,7 +59,7 @@
 ### 2. 运行跟踪器
 
 ```bash
-cd /root/.openclaw/workspace/fund_arbitrage
+cd /root/quant/fund_arbitrage
 
 # 方式1: 一键启动（自动检测IB连接和交易时段）
 ./start_ib_tracker.sh

@@ -98,7 +98,7 @@ python3 run_estimator.py --mode manual --interactive
 crontab -e
 
 # 添加: 每5分钟检查，溢价>2%时记录
-*/5 9-15 * * 1-5 cd /root/.openclaw/workspace/fund_arbitrage && python3 run_estimator.py --alert 2.0 >> logs/alert.log 2>&1
+*/5 9-15 * * 1-5 cd /root/quant/fund_arbitrage && python3 run_estimator.py --alert 2.0 >> logs/alert.log 2>&1
 ```
 
 ## 🎯 估值准确度

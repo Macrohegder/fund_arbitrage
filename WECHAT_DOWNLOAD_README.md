@@ -45,8 +45,8 @@ vim wechat_articles_urls.txt
 
 # 批量下载（在 wechat-article-for-ai 目录中）
 cd /tmp/wechat-article-for-ai
-python3 -m wechat_to_md.cli -f /root/.openclaw/workspace/fund_arbitrage/wechat_articles_urls.txt \
-    -o /root/.openclaw/workspace/fund_arbitrage/wechat_articles \
+python3 -m wechat_to_md.cli -f /root/quant/fund_arbitrage/wechat_articles_urls.txt \
+    -o /root/quant/fund_arbitrage/wechat_articles \
     --force
 ```
 
